@@ -24,10 +24,12 @@ def seter_num(digitos):
 
 
 def resultado(): 
-    global concatenador
+    global concatenador, operadores, operacion
     total = str(eval(concatenador))
     numeroEnPantalla.set(total)
     concatenador = ""
+    operacion = []
+    operadores = []
 
 # Configuración pantalla de salida 
 pantalla = Entry(root, width=40, bg="black", fg="white", borderwidth=0, font=("arial", 18, "bold"), textvariable = numeroEnPantalla)
